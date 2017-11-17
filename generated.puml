@@ -1,0 +1,40 @@
+@startuml
+annotation java.lang.Override
+annotation javax.persistence.Entity
+annotation javax.persistence.GeneratedValue
+annotation javax.persistence.Id
+class com.sun.javafx.scene.control.skin.VirtualFlow
+class java.util.ArrayList
+class java.util.List
+class java.util.Map
+class javax.persistence.GenerationType
+class model.Departament
+class model.Employe
+class model.Projet
+class tp2jpa.Tp2JPA
+interface java.io.Serializable
+model.Departament ..> java.lang.Override
+model.Departament ..> javax.persistence.Entity
+model.Departament ..> javax.persistence.GeneratedValue
+model.Departament ..> javax.persistence.Id
+model.Departament ..> java.util.ArrayList
+model.Departament ..> java.util.List
+model.Departament ..> javax.persistence.GenerationType
+model.Departament --|> java.io.Serializable
+model.Employe ..> java.lang.Override
+model.Employe ..> javax.persistence.Entity
+model.Employe ..> javax.persistence.GeneratedValue
+model.Employe ..> javax.persistence.Id
+model.Employe ..> java.util.Map
+model.Employe ..> javax.persistence.GenerationType
+model.Employe --|> java.io.Serializable
+model.Projet ..> java.lang.Override
+model.Projet ..> javax.persistence.Entity
+model.Projet ..> javax.persistence.GeneratedValue
+model.Projet ..> javax.persistence.Id
+model.Projet ..> com.sun.javafx.scene.control.skin.VirtualFlow
+model.Projet ..> java.util.ArrayList
+model.Projet ..> java.util.List
+model.Projet ..> javax.persistence.GenerationType
+model.Projet --|> java.io.Serializable
+@enduml
